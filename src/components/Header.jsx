@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
-// import { FaSearch } from react-icons/fa;
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { IoSearchCircleOutline } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
@@ -18,9 +17,11 @@ export default function Header() {
             <form className='bg-slate-100 p-3 rounded-lg flex items-center'>
                 <input
                 type="text" 
-                placeholder='Search...' className='bg-transparent focus: outline-none w-24 sm:w-64'/>
+                placeholder='Search...' 
+                className='bg-transparent focus: outline-none w-24 sm:w-64'/>
                 {/* download and install npm i react-icons  to veiw icons*/}
                 {/* <FaSearch className='text-slate-600' /> */}
+                <IoSearchCircleOutline className='text-slate-600 size-7' />
             </form>
 
             <ul className='flex gap-4'>
